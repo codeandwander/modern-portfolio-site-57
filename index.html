@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Modern Portfolio Site</title>
+  <title>John Doe | Modern Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -19,14 +19,14 @@
   </header>
 
   <main>
-    <section id="hero" class="hero">
+    <section id="hero">
       <div class="hero-content">
         <h1>John Doe</h1>
         <p>Freelance Developer</p>
       </div>
     </section>
 
-    <section id="projects" class="projects">
+    <section id="projects">
       <h2>My Projects</h2>
       <div class="project-grid">
         <div class="project-card">
@@ -44,36 +44,35 @@
           <h3>Project 3</h3>
           <p>Description of Project 3</p>
         </div>
-        <div class="project-card">
-          <img src="project4.jpg" alt="Project 4">
-          <h3>Project 4</h3>
-          <p>Description of Project 4</p>
-        </div>
       </div>
     </section>
 
-    <section id="skills" class="skills">
+    <section id="skills">
       <h2>My Skills</h2>
       <div class="skill-icons">
-        <img src="html5.svg" alt="HTML5">
-        <img src="css3.svg" alt="CSS3">
+        <img src="html.svg" alt="HTML5">
+        <img src="css.svg" alt="CSS3">
         <img src="javascript.svg" alt="JavaScript">
         <img src="react.svg" alt="React">
-        <img src="nodejs.svg" alt="Node.js">
-        <img src="mongodb.svg" alt="MongoDB">
+        <img src="node.svg" alt="Node.js">
+        <img src="mysql.svg" alt="MySQL">
       </div>
     </section>
 
-    <section id="contact" class="contact">
-      <h2>Contact Me</h2>
-      <div class="contact-info">
-        <p>Email: johndoe@example.com</p>
-        <div class="social-links">
-          <a href="#" target="_blank"><img src="linkedin.svg" alt="LinkedIn"></a>
-          <a href="#" target="_blank"><img src="twitter.svg" alt="Twitter"></a>
-          <a href="#" target="_blank"><img src="github.svg" alt="GitHub"></a>
-        </div>
-      </div>
+    <section id="contact">
+      <h2>Get in Touch</h2>
+      <form id="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Send</button>
+      </form>
     </section>
   </main>
 
@@ -86,3 +85,35 @@
 </html>
 
 FILENAME: style.css
+/* Global Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(to right, #667eea, #764ba2);
+  color: #fff;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: #10b981;
+}
+
+/* Header and Navigation */
+header {
+  position: sticky;
+  top: 0;
+  background-color: rgba(26, 32, 44, 0.8);
+  padding: 1rem;
+  z-index: 100;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
